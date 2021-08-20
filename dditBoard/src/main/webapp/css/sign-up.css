@@ -1,0 +1,172 @@
+@import url(../util/reset.css);
+
+/* Common */
+button, [type=button] {
+  outline: none;
+  border: none;
+  font-size: 18px;
+  background: #7bd3f7;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Main */
+.body__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+h1 {
+  font-size: 28px;
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sign-up-frm {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin-bottom: 50px;
+}
+
+label {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+[class $= 'wranning'] {
+  margin-bottom: 20px;
+}
+
+.frm-input {
+  margin-bottom: 10px;
+  padding: 10px 5px;
+  font-size: 20px;
+  background: none;
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid #999;
+}
+
+.frm-input:active {
+  outline: none;
+}
+
+[disabled] {
+  cursor: default;
+  background: #999;
+}
+
+.id-wrapper {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+#user-name {
+  margin-bottom: 20px;
+}
+
+.email-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+#user-email {
+  width: 75%;
+  margin: 0;
+}
+
+.email-btn {
+  width: 45%;
+}
+
+.send-lisence {
+  width: 20%;
+}
+
+.lisence {
+  margin: 0;
+  width: 50%;
+}
+
+.frm-submit-btn {
+  padding: 10px 0;
+}
+
+footer {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  background: #fff;
+}
+
+footer p {
+  font-size: 20px;
+  color: #999;
+}
+
+
+@media screen and (max-width: 720px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .frm-input {
+    font-size: 14px;
+  }
+
+  .sign-up-frm {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    overflow: scroll;
+  }
+
+  button, [type=button] {
+    font-size: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  [class $= 'wranning'] {
+    font-size: 10px;
+  }
+
+  .frm-input {
+    font-size: 14px;
+  }
+  
+  .sign-up-frm {
+    width: 300px;
+    margin-bottom: 10px;
+  }
+
+  .send-lisence {
+    padding: 0 10px;
+  }
+
+  footer p {
+    font-size: 10px;
+  }
+}

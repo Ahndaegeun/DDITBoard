@@ -1,0 +1,169 @@
+@import url(../util/reset.css);
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body__container {
+  width: 70%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 7px 20px #999;
+}
+
+.main-banner {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/main_banner_img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-title {
+  font-size: 48px;
+  color: #000;
+}
+
+.login-frm {
+  width: 50%;
+  background: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-frm * {width: 80%;}
+
+.login-title {
+  margin-bottom: 50px;
+  font-size: 28px;
+}
+
+.login-sub-title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.point {
+  color: #007fbe;
+  font-weight: bold;
+}
+
+.user-id,
+.user-pw {
+  margin-bottom: 30px;
+  font-size: 28px;
+  padding: 20px 10px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #007fbe;
+}
+
+input:focus {
+  border-bottom: 3px solid #007fbe;
+}
+
+.frm-inner-wrap {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.check-box-label {
+  display: flex;
+}
+
+.re-check {
+  width: 15px;
+}
+
+.forgot-pw {
+  text-align: right;
+}
+
+.login-btn {
+  font-size: 28px;
+  margin-bottom: 30px;
+  background: linear-gradient(90deg, rgba(21,136,203,1) 0%, rgba(78,177,199,1) 100%);
+  color: #fff;
+  padding: 20px 0;
+  text-transform: uppercase;
+  letter-spacing: .25em;
+}
+
+.go-to-sign-up {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  .main-banner {
+    display: none;
+  }
+
+  .login-frm {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 530px) {
+  .body__container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+  }
+
+  .login-sub-title {
+    font-size: 20px;
+  }
+
+  .user-id,
+  .user-pw {
+    font-size: 14px;
+  }
+
+  .frm-inner-wrap {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .check-box-label {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .forgot-pw {
+    text-align: center;
+  }
+
+  .login-btn {
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+  }
+}

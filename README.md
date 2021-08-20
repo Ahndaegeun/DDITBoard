@@ -1,0 +1,5 @@
+- 패키지는 vo, dao, util, controller만 사용
+- DB 변수명은 snake case사용
+- java변수명은 camel case와 pascal case사용
+- DB는 util을 사용하고 vo로 변환해서 리턴해줄것
+- dao, controller는 싱글톤으로 만들것

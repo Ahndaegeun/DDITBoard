@@ -1,0 +1,114 @@
+@import url(../util/reset.css);
+
+* {
+  font-size: 24px;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.body__container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.form-wrapper {
+  height: 500px;
+}
+
+.btn-group {
+  width: 500px;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.id-btn,
+.pw-btn {
+  width: 50%;
+  font-size: 20px;
+  background: #7bd3f7;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.select-btn {
+  background: #999;
+}
+
+[class $= frm] {
+  display: none;
+  flex-direction: column;
+}
+
+label {
+  align-self: flex-start;
+  margin-bottom: 10px;
+}
+
+input {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #007fbe;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  font-size: 20px;
+  width: 100%;
+}
+
+.search-id-btn,
+.reset-pw-btn {
+  width: 250px;
+  outline: none;
+  border: none;
+  font-size: 22px;
+  background: #7bd3f7;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px 0;
+  margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 570px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .inner {
+    margin-top: 150px;
+  }
+
+  .id-btn,
+  .pw-btn {
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  .btn-group {
+    width: 300px;
+  }
+
+  .search-id-btn,
+  .reset-pw-btn {
+    font-size: 18px;
+  }
+}
