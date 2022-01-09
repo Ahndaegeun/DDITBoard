@@ -38,6 +38,7 @@ public class MemberController extends HttpServlet {
 			action = new LogoutAction();
 		} else if(cmd.equals("signUpPro")) {
 			action = SignupAction.getSignupAction();
+			
 		} else if(cmd.equals("searchIdPro")) {
 			action = SearchIdAction.getSearchIdAction();
 		} else if(cmd.equals("resetPwPro")) {

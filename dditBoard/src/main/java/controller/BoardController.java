@@ -17,8 +17,7 @@ import service.WriteAction;
 public class BoardController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    public BoardController() {
-    }
+    public BoardController() {}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
